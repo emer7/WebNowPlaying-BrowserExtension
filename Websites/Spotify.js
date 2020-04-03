@@ -28,7 +28,7 @@ function setup()
 	};
 	spotifyInfoHandler.title = function()
 	{
-		return document.getElementsByClassName("track-info__name")[0].innerText;
+		return document.getElementsByClassName("now-playing")[0].getElementsByTagName('a')[1].innerText;
 	};
 	spotifyInfoHandler.artist = function()
 	{
